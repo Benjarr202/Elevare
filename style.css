@@ -168,18 +168,28 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800/007bff/ffffff?text=Data+Analysis+Background') no-repeat center center/cover;
+    /* Removed background image from hero for separate image placement */
+    background-color: var(--primary-blue); /* Solid blue background */
     color: var(--white);
-    height: 100vh;
+    min-height: 100vh; /* Changed to min-height to accommodate image */
     display: flex;
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* Adjust for fixed navbar */
+    padding-top: 80px; /* Adjust for fixed navbar and better spacing */
+    padding-bottom: 80px; /* Add padding at the bottom */
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column; /* Stack content and image vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure content is centered */
 }
 
 .hero-content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto; /* Add margin below content before image */
 }
 
 .hero-content h2 {
@@ -194,6 +204,22 @@ a:hover {
     color: rgba(255,255,255,0.9);
 }
 
+.hero-image {
+    max-width: 100%;
+    width: 700px; /* Max width for the image */
+    margin-top: 30px; /* Space between text and image */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+}
+
+
 /* About Section */
 .about-section {
     text-align: center;
@@ -205,11 +231,19 @@ a:hover {
 }
 
 /* Services Section */
+.services-section .container {
+    text-align: center; /* Center content of the container */
+}
+
 .services-section .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    justify-content: center; /* Center the grid items horizontally */
+    max-width: 900px; /* Limit grid width to keep it centered */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service-item {
@@ -244,12 +278,19 @@ a:hover {
 }
 
 /* How to Order Section */
+.order-section .container {
+    text-align: center; /* Center content of the container */
+}
+
 .order-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 40px;
-    text-align: center;
+    justify-content: center; /* Center the grid items horizontally */
+    max-width: 1000px; /* Limit grid width to keep it centered */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .step-item {
@@ -521,6 +562,11 @@ textarea {
 
     .footer .quick-links li {
         margin: 10px 0;
+    }
+
+    .hero-image {
+        width: 100%; /* Make image full width on smaller screens */
+        padding: 0 20px; /* Add some padding */
     }
 }
 
