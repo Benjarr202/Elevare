@@ -1,12 +1,12 @@
 /* General Body & HTML Reset */
 :root {
-    --primary-blue: #007bff;
-    --dark-blue: #0a192f;
-    --black: #121212;
-    --white: #fff;
-    --light-gray: #f8f9fa;
-    --text-color: #555;
-    --border-color: #ddd;
+    --primary-blue: #007bff; /* Accent Blue for buttons and highlights */
+    --dark-blue: #0a192f;    /* Deep Navy background */
+    --black: #121212;        /* Charcoal Black for sections or text */
+    --white: #ffffff;        /* Pure White for text and highlights */
+    --light-gray: #d1d5db;   /* Light Gray for borders or subtle backgrounds */
+    --text-color: #e5e5e5;   /* Soft gray-white for body text */
+    --border-color: #2c2c2c; /* Dark gray for borders */
 }
 
 * {
