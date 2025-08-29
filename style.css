@@ -87,7 +87,7 @@ a:hover {
 }
 
 .bg-light {
-    background-color: var(--light-gray);
+    background-color: var(--dark-blue);
 }
 
 /* Navigation Bar */
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .navbar .logo {
-    font-size: 1.8em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -161,14 +161,14 @@ a:hover {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--dark-blue);
     margin: 5px;
     transition: all 0.3s ease;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800/007bff/ffffff?text=Data+Analysis+Background') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://imgur.com/gallery/elevare-kpiWqfI#azPHwj1') no-repeat center center/cover;
     color: var(--white);
     height: 100vh;
     display: flex;
