@@ -5,7 +5,7 @@
     --black: #121212;
     --white: #fff;
     --light-gray: #f8f9fa;
-    --text-color: #555;
+    --text-color: #FFFFFF;
     --border-color: #ddd;
 }
 
@@ -23,7 +23,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--primary-blue);
+    background-color: var(--dark-blue);
 }
 
 .container {
