@@ -4,7 +4,7 @@
     --dark-blue: #0056b3;
     --black: #333;
     --white: #fff;
-    --blue: #001e48;
+    --light-gray: #f8f9fa;
     --text-color: #555;
     --border-color: #ddd;
 }
@@ -168,8 +168,8 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://imgur.com/gallery/elevare-kpiWqfI#azPHwj1') no-repeat center center/cover;
-    color: var(--blue);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x800/007bff/ffffff?text=Data+Analysis+Background') no-repeat center center/cover;
+    color: var(--white);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -430,6 +430,70 @@ textarea {
     opacity: 0.8;
 }
 
+/* Location Section */
+.location-section {
+    text-align: center;
+}
+
+.location-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px; /* Space before map */
+}
+
+.detail-item {
+    flex-basis: 300px; /* Adjust as needed */
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.detail-item i {
+    font-size: 3em;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.detail-item h4 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.detail-item p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.detail-item a {
+    font-weight: bold;
+}
+
+.map-placeholder {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures border-radius applies to iframe */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+
 /* Footer */
 .footer {
     background: var(--black);
@@ -521,6 +585,16 @@ textarea {
 
     .footer .quick-links li {
         margin: 10px 0;
+    }
+
+    .location-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .detail-item {
+        width: 90%;
+        max-width: 400px;
     }
 }
 
