@@ -23,7 +23,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--white);
+    background-color: var(--dark-blue);
 }
 
 .container {
@@ -479,6 +479,20 @@ textarea {
     font-weight: bold;
 }
 
+
+.map-placeholder {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures border-radius applies to iframe */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
 
 
 /* Footer */
