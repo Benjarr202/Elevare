@@ -237,7 +237,7 @@ a:hover {
 .service-item h4 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .service-item p {
@@ -276,7 +276,7 @@ a:hover {
 
 .step-item h4 {
     font-size: 1.4em;
-    color: var(--black);
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -353,7 +353,7 @@ a:hover {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .form-group input[type="text"],
@@ -389,7 +389,7 @@ textarea {
     min-width: 250px;
     max-width: 400px;
     text-align: center;
-    background: var(--light-gray);
+    background: var(--Charcoal-Gray);
     padding: 40px;
     border-radius: 8px;
     display: flex;
