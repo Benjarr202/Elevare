@@ -197,6 +197,7 @@ a:hover {
 /* About Section */
 .about-section {
     text-align: center;
+    color: var(--black)
 }
 
 .about-section p {
