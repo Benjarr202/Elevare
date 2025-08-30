@@ -245,6 +245,7 @@ a:hover {
 
 /* How to Order Section */
 .order-steps {
+    background: var(--Saddle-Brown);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
@@ -261,7 +262,7 @@ a:hover {
 
 .step-item:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-blue);
+    border-color: var(--white);
 }
 
 .step-item .step-number {
