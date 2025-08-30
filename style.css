@@ -1,6 +1,7 @@
 /* General Body & HTML Reset */
 :root {
     --primary-blue: #007bff;
+    --Rich-Black: #0C1321;
     --dark-blue: #0a192f;
     --black: #121212;
     --Saddle-Brown: #7B3F00;
@@ -23,7 +24,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--#f8f9fa);
+    background-color: var(--#0C1321);
 }
 
 .container {
