@@ -591,12 +591,12 @@ textarea {
         position: absolute;
         right: 0;
         top: 60px; /* Below the navbar */
-        height: calc(100vh - 60px);
-        background-color: var(--black);
+        height: calc(20vh - 10px);
+        background-color: var(--light-gray);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 60%;
+        width: 30%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         padding-top: 50px;
