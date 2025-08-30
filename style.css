@@ -301,7 +301,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--Charcoal-Gray); /* Keep this if you want the item background */
+    background: var(--light-gray); /* Keep this if you want the item background */
     padding: 25px 35px;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
@@ -331,7 +331,7 @@ a:hover {
 .payment-item span {
     font-size: 1.2em;
     font-weight: 500;
-    color: var(--text-color); /* You can keep this generic or set specific text colors too */
+    color: var(--Rich-Black); /* You can keep this generic or set specific text colors too */
 }
 
 /* --- Brand Specific Colors for Font Awesome Icons --- */
