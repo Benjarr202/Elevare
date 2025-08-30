@@ -389,7 +389,7 @@ textarea {
     min-width: 250px;
     max-width: 400px;
     text-align: center;
-    background: var(--Charcoal-Gray);
+    background: var(--dark-blue);
     padding: 40px;
     border-radius: 8px;
     display: flex;
@@ -398,9 +398,9 @@ textarea {
 }
 
 .contact-info h4 {
-    font-size: 1.8em;
+    font-size: 2.3em;
     margin-bottom: 15px;
-    color: var(--black);
+    color: var(--text-color);
 }
 
 .contact-info p {
@@ -429,7 +429,7 @@ textarea {
 
 .contact-info .note {
     font-size: 0.9em;
-    color: var(--text-color);
+    color: var(--light-gray);
     opacity: 0.8;
 }
 
