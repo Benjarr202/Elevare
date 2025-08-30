@@ -316,12 +316,12 @@ a:hover {
 
 .payment-item i {
     font-size: 3.5em;
-    /* REMOVED: color: var(--black); */
+    /* REMOVED: color: var(--black); - Specific colors will be applied via new classes */
     margin-bottom: 15px;
 }
 
-/* For image-based logos like M-Pesa if you use them */
-.payment-item img.mpesa-icon { /* Adjust class name as per your HTML */
+/* If you add an M-Pesa image logo */
+.mpesa-logo {
     width: 60px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 15px;
@@ -334,40 +334,22 @@ a:hover {
     color: var(--text-color); /* You can keep this generic or set specific text colors too */
 }
 
-/* --- Brand Specific Colors --- */
+/* --- Brand Specific Colors for Font Awesome Icons --- */
 
-/* PayPal */
 .paypal-icon {
     color: #0070ba; /* PayPal Blue */
 }
 
-/* Visa */
 .visa-icon {
     color: #1a1f71; /* Visa Blue */
 }
 
-/* Mastercard */
 .mastercard-icon {
     color: #eb001b; /* Mastercard Red */
 }
-/* If you use the Font Awesome mastercard icon, it's typically just the card outline */
-/* You might want to layer colors for the circles or use an SVG/image for a true logo */
 
-/* M-Pesa - if using a Font Awesome icon that you want to color green, otherwise use an image */
-/* .mpesa-icon {
-    color: #4CAF50; 
-} */
-
-/* Apple Pay */
-.apple-pay-icon {
-    color: #000000; /* Apple Pay Black */
-}
-
-/* Google Pay */
-.google-pay-icon {
-    color: #5f6368; /* Google Pay Gray - you might want to use the actual logo for full effect */
-    /* Often the GPay logo is multi-colored, so a simple icon might not capture it fully.
-       For a simple icon, this grey is common, or use red/yellow/blue/green if using Google icon. */
+.amex-icon {
+    color: #002663; /* American Express Blue */
 }
 
 /* Contact Section */
