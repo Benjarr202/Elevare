@@ -482,7 +482,7 @@ textarea {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex; /* Enable flex for internal alignment */
     flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Push map link to bottom */
+    /* Removed justify-content: space-between; as content will now be grouped differently */
 }
 
 .detail-item:hover {
@@ -490,10 +490,18 @@ textarea {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+.detail-item > h4 { /* Styling for the "Direct Contact" title */
+    font-size: 1.6em;
+    margin-bottom: 25px; /* More space below the main title */
+    color: var(--text-color);
+    text-align: center; /* Ensure it's centered if the parent isn't */
+}
+
 .detail-item i {
-    font-size: 3em;
-    color: var(--primary-blue); /* Default icon color */
-    margin-bottom: 15px;
+    font-size: 3em; /* Base icon size */
+    color: var(--primary-blue); /* Default icon color, will be overridden */
+    margin-right: 15px; /* Space between icon and text details */
+    flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 /* Specific icon colors */
@@ -505,39 +513,40 @@ textarea {
     color: #25D366; /* WhatsApp green */
 }
 
-.detail-item h4 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-    color: var(--text-color);
-}
-
-.detail-item p {
-    font-size: 1.1em;
-    margin-bottom: 15px; /* Space between address text and map link */
-}
-
-.detail-item a {
-    font-weight: bold;
+.contact-info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between phone and whatsapp contact methods */
 }
 
 .contact-method {
     display: flex;
-    align-items: center; /* Align icon and text horizontally */
-    gap: 10px; /* Space between icon and text */
-    margin-bottom: 15px; /* Space between contact methods */
+    align-items: flex-start; /* Align icon and text block to the top */
 }
 
-.contact-method i {
-    font-size: 2em; /* Adjust icon size for inline display */
-    margin-bottom: 0; /* Remove bottom margin as it's now inline */
+.contact-details-text {
+    text-align: left; /* Align text within this block to the left */
 }
 
-.contact-method h4 {
-    margin-bottom: 0; /* Remove bottom margin for h4 */
+.contact-details-text h5 { /* New heading for Phone/WhatsApp title */
+    font-size: 1.3em; /* Slightly smaller than main H4 */
+    margin-bottom: 5px; /* Space between title and number */
+    color: var(--text-color);
 }
 
-.contact-method p {
-    margin-bottom: 0; /* Remove bottom margin for p */
+.contact-details-text p {
+    font-size: 1.1em;
+    margin-bottom: 0; /* No bottom margin for the number paragraph */
+}
+
+.contact-details-text a {
+    font-weight: bold;
+    color: var(--text-color); /* Ensure link color is readable */
+    text-decoration: none; /* Remove default underline */
+}
+
+.contact-details-text a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* New styles for the map placeholder within the address container */
