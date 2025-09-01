@@ -492,8 +492,17 @@ textarea {
 
 .detail-item i {
     font-size: 3em;
-    color: var(--primary-blue);
+    color: var(--primary-blue); /* Default icon color */
     margin-bottom: 15px;
+}
+
+/* Specific icon colors */
+.detail-item .phone-icon {
+    color: #28a745; /* Green for phone icon */
+}
+
+.detail-item .whatsapp-icon {
+    color: #25D366; /* WhatsApp green */
 }
 
 .detail-item h4 {
@@ -509,6 +518,26 @@ textarea {
 
 .detail-item a {
     font-weight: bold;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    gap: 10px; /* Space between icon and text */
+    margin-bottom: 15px; /* Space between contact methods */
+}
+
+.contact-method i {
+    font-size: 2em; /* Adjust icon size for inline display */
+    margin-bottom: 0; /* Remove bottom margin as it's now inline */
+}
+
+.contact-method h4 {
+    margin-bottom: 0; /* Remove bottom margin for h4 */
+}
+
+.contact-method p {
+    margin-bottom: 0; /* Remove bottom margin for p */
 }
 
 /* New styles for the map placeholder within the address container */
