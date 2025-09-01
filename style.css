@@ -656,7 +656,7 @@ textarea {
     }
     /* If you have specific hover states for mobile, you might want to adjust them too */
     .navbar .nav-links li a:hover {
-        color: var(--primary-color); /* Or any hover color you prefer for white links */
+        color: var(--text-color); /* Or any hover color you prefer for white links */
     }
 
 
