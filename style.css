@@ -415,7 +415,7 @@ textarea {
     min-width: 250px;
     max-width: 400px;
     text-align: center;
-    background: var(--dark-blue);
+    background: var(--light-gray);
     padding: 40px;
     border-radius: 8px;
     display: flex;
