@@ -450,7 +450,7 @@ textarea {
 }
 
 .contact-info .email-link:hover {
-    color: var(--dark-blue);
+    color: var(--light-gray);
 }
 
 .contact-info .note {
